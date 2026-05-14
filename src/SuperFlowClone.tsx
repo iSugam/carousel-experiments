@@ -72,7 +72,7 @@ export default function SuperFlowClone() {
     swiper.slides.forEach((slide) => {
       const swiperSlide = slide as SwiperSlideElement;
       const slideProgress = swiperSlide.progress;
-      const absProgress = Math.abs(slideProgress);
+      // const absProgress = Math.abs(slideProgress);
       console.log(slideProgress);
 
       const innerScrub = swiperSlide.querySelector(
@@ -90,9 +90,9 @@ export default function SuperFlowClone() {
       frags.forEach((frag, i) => {
         const config = fragments[i];
         const x = slideProgress * config.xOffset;
-        const y = absProgress * config.yOffset;
-        const rotate = slideProgress * config.rotate;
-        const scale = 1 - absProgress * 0.15;
+        // const y = absProgress * config.yOffset;
+        // const rotate = slideProgress * config.rotate;
+        // const scale = 1 - absProgress * 0.15;
 
         frag.style.transform = `translateX(${x}px)`;
       });
