@@ -1,6 +1,75 @@
 @import "tailwindcss";
 
-.scale__img {
+.slide__item .side__img__1 {
+  animation: transform_x_1 10s linear;
+  transform: translateX(3%);
+  will-change: transform;
+}
+
+@keyframes transform_x_1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(3%);
+  }
+}
+
+.slide__item .side__img__2 {
+  animation: transform_x_2 10s linear;
+  transform: translateX(5%);
+  will-change: transform;
+}
+
+@keyframes transform_x_2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(5%);
+  }
+}
+
+
+.slide__item .side__img__3 {
+  animation: transform_x_3 10s linear;
+  transform: translateX(-5%);
+  will-change: transform;
+}
+
+@keyframes transform_x_3 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-5%);
+  }
+}
+
+.slide__item .side__img__4 {
+  animation: transform_x_4 10s linear;
+  transform: translateX(-4%);
+  will-change: transform;
+}
+
+@keyframes transform_x_4 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-4%);
+  }
+}
+
+
+
+
+
+.slide__item .side__img .scale__img {
   animation: scale 10s linear;
   transform: scale(1.25);
   will-change: transform;
@@ -13,6 +82,38 @@
 
   100% {
     transform: scale(1.25);
+  }
+}
+
+.slide__item .side__img__2 .scale__img {
+  animation: scale-2 10s linear;
+  transform: scale(1.15);
+  will-change: transform;
+}
+
+@keyframes scale-2 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.slide__item .side__img__3 .scale__img {
+  animation: scale-3 10s linear;
+  transform: scale(1.35);
+  will-change: transform;
+}
+
+@keyframes scale-3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.35);
   }
 }
 

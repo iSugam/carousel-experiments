@@ -35,22 +35,18 @@ const ITEMS: CarouselItem[] = [
 const clipPaths = [
   {
     clipPath: "polygon(90% 0, 100% 0, 100% 100%, 100% 100%)",
-    animationDuration: "11s",
-    className: "right-0",
+    className: "left-0",
   },
   {
     clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 85% 100%)",
-    animationDuration: "10s",
-    className: "right-0",
+    className: "left-0",
   },
   {
     clipPath: "polygon(0% 0%, 15% 0%, 0% 100%, 0% 100%)",
-    animationDuration: "10.5s",
     className: "left-0",
   },
   {
     clipPath: "polygon(0 0, 0 0, 10% 100%, 0% 100%)",
-    animationDuration: "9.5s",
     className: "left-0",
   },
 ];
@@ -77,7 +73,7 @@ export default function App() {
         {ITEMS.map((item) => (
           <SwiperSlide key={item.id}>
             {({ isActive, isPrev }) => (
-              <div className="size-full relative slide__item">
+              <div className="slide__item size-full relative z-100">
                 <div className="noisy absolute inset-0 size-full z-99"></div>
 
                 <img
@@ -99,18 +95,15 @@ export default function App() {
 
                 {clipPaths.map((data, j) => (
                   <div
-                    className={`size-full side__img absolute top-0 overflow-clip ${data.className}`}
+                    className={`side__img ${isActive || isPrev ? `side__img__${j + 1}` : ""} size-full absolute top-0 left-0 overflow-clip`}
                     style={{
                       clipPath: data.clipPath,
                     }}
-                    key={data.clipPath + j}
+                    key={data.clipPath}
                   >
                     <img
                       src={item.url}
-                      className={`${isActive || isPrev ? "scale__img" : ""} size-full origin-bottom-left object-cover scale-125 duration-500`}
-                      style={{
-                        animationDuration: data.animationDuration,
-                      }}
+                      className={`${isActive || isPrev ? "scale__img" : ""} size-full object-cover`}
                     />
                   </div>
                 ))}
