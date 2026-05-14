@@ -77,7 +77,9 @@ export default function App() {
         {ITEMS.map((item) => (
           <SwiperSlide key={item.id}>
             {({ isActive, isPrev }) => (
-              <div className="size-full slide__item">
+              <div className="size-full relative slide__item">
+                <div className="noisy absolute inset-0 size-full z-99"></div>
+
                 <img
                   src={item.url}
                   alt=""
