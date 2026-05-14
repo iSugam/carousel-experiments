@@ -81,7 +81,7 @@ export default function App() {
       >
         {ITEMS.map((item) => (
           <SwiperSlide key={item.id}>
-            {({ isActive, _, isPrev }) => (
+            {({ isActive, isPrev }) => (
               <div className="size-full slide__item">
                 <img
                   src={item.url}
