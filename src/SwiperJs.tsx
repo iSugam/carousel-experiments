@@ -60,10 +60,10 @@ export default function App() {
         creativeEffect={{
           prev: {
             shadow: true,
-            translate: ["-50%", 0, 0],
+            translate: [0, 0, 0],
           },
           next: {
-            translate: ["100%", 0, 0],
+            translate: ["100%", 0, 1],
           },
         }}
         modules={[EffectCreative, Autoplay]}
