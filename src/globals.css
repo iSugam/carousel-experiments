@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+.scale__img {
+  animation: scale 10s linear;
+  transform: scale(1.25);
+  will-change: transform;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+.main_img_scale {
+  animation: main-scale 10s linear;
+  transform: scale(1.15);
+  will-change: transform;
+}
+
+@keyframes main-scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.heading_animate {
+  animation: heading 10s linear;
+  transform: translate(-40%, -100%) scale(1.2);
+}
+
+@keyframes heading {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-40%, -100%) scale(1.2);
+  }
+}
