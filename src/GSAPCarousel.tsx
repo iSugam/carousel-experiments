@@ -32,7 +32,6 @@ const ITEMS: CarouselItem[] = [
 const GSAPCarousel = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const [data, setData] = useState(ITEMS);
   const [isDragging, setIsDragging] = useState(false);
 
   return (
@@ -40,7 +39,7 @@ const GSAPCarousel = () => {
       ref={containerRef}
       className="relative w-full h-screen overflow-hidden"
     >
-      {data.map((item) => (
+      {ITEMS.map((item) => (
         <div
           key={item.id}
           className="absolute size-full inset-0"
