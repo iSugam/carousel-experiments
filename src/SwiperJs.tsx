@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCreative } from "swiper/modules";
+import { EffectCreative, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-creative";
 
@@ -66,9 +66,13 @@ export default function App() {
             translate: ["100%", 0, 1],
           },
         }}
-        modules={[EffectCreative]}
+        modules={[EffectCreative, Autoplay]}
         className="mySwiper h-screen w-full"
+        speed={1100}
         loop
+        autoplay={{
+          delay: 4000,
+        }}
       >
         {ITEMS.map((item) => (
           <SwiperSlide key={item.id}>
@@ -79,14 +83,14 @@ export default function App() {
                 <img
                   src={item.url}
                   alt=""
-                  className={`size-full object-cover scale-115 ${isActive || isPrev ? "main_img_scale" : ""}`}
+                  className={`size-full object-cover scale-115 will-change-transform ${isActive || isPrev ? "main_img_scale" : ""}`}
                   style={{
                     clipPath: "polygon(15% 0, 100% 0, 85% 100%, 0% 100%)",
                   }}
                 />
 
                 <h2
-                  className={` absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl transform-[translate(-50%,-50%)_scale(1)] lg:text-7xl text-center lg:text-left lg:w-max font-extrabold text-white text-shadow-xs uppercase transition-transform duration-800 ${
+                  className={` absolute top-1/2 left-1/2 text-4xl sm:text-5xl will-change-transform md:text-6xl transform-[translate(-50%,-50%)_scale(1)] lg:text-7xl text-center lg:text-left lg:w-max font-extrabold text-white text-shadow-xs uppercase transition-transform duration-800 ${
                     isActive || isPrev ? "heading_animate" : ""
                   }`}
                 >
@@ -95,7 +99,8 @@ export default function App() {
 
                 {clipPaths.map((data, j) => (
                   <div
-                    className={`side__img ${isActive || isPrev ? `side__img__${j + 1}` : ""} size-full absolute top-0 left-0 overflow-clip`}
+                    className={`side__img ${isActive || isPrev ? `side__img__${j + 1}` : ""} will-change-transform
+                     size-full absolute top-0 left-0 overflow-clip`}
                     style={{
                       clipPath: data.clipPath,
                     }}

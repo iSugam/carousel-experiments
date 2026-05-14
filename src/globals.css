@@ -149,5 +149,18 @@
 }
 
 .noisy {
-  background-image: url("/public/noise.png")
+  background-image: url("/public/noise.png");
+  transform: scale(1.5);
+  animation: noise 10s linear;
+  will-change: transform;
+}
+
+@keyframes noise {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
 }
