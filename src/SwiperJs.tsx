@@ -94,7 +94,7 @@ export default function App() {
 
                 <h2
                   className={` absolute top-1/2 left-1/2 text-6xl transform-[translate(-40%,-100%)_scale(1.2)] lg:text-7xl w-max font-extrabold text-white text-shadow-xs uppercase transition-transform duration-800 ${
-                    isActive ? "heading_animate" : ""
+                    isActive || isPrev ? "heading_animate" : ""
                   }`}
                 >
                   {item.title}
