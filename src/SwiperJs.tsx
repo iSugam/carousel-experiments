@@ -12,22 +12,22 @@ interface CarouselItem {
 const ITEMS: CarouselItem[] = [
   {
     id: "1",
-    url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=60&w=1920&auto=format&fit=crop",
     title: "Modern Villa",
   },
   {
     id: "2",
-    url: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1920&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=60&w=1920&auto=format&fit=crop",
     title: "Minimalist Interior",
   },
   {
     id: "3",
-    url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1920&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=60&w=1920&auto=format&fit=crop",
     title: "Luxury Patio",
   },
   {
     id: "4",
-    url: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1920&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=60&w=1920&auto=format&fit=crop",
     title: "Concrete Facade",
   },
 ];
