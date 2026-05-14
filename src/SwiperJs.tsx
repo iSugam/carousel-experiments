@@ -88,7 +88,7 @@ export default function App() {
                 />
 
                 <h2
-                  className={` absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl transform-[translate(-40%,-100%)_scale(1.2)] lg:text-7xl text-center lg:text-left lg:w-max font-extrabold text-white text-shadow-xs uppercase transition-transform duration-800 ${
+                  className={` absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl transform-[translate(-50%,-50%)_scale(1)] lg:text-7xl text-center lg:text-left lg:w-max font-extrabold text-white text-shadow-xs uppercase transition-transform duration-800 ${
                     isActive || isPrev ? "heading_animate" : ""
                   }`}
                 >
