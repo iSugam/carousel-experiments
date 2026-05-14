@@ -108,7 +108,7 @@ export default function App() {
                   >
                     <img
                       src={item.url}
-                      className={`${isActive || isPrev ? "scale__img" : ""} size-full object-cover`}
+                      className={`${isActive || isPrev ? "scale__img" : ""} will-change-transform size-full object-cover`}
                     />
                   </div>
                 ))}

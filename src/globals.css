@@ -3,7 +3,6 @@
 .slide__item .side__img__1 {
   animation: transform_x_1 10s linear;
   transform: translateX(3%);
-  will-change: transform;
 }
 
 @keyframes transform_x_1 {
@@ -19,7 +18,6 @@
 .slide__item .side__img__2 {
   animation: transform_x_2 10s linear;
   transform: translateX(5%);
-  will-change: transform;
 }
 
 @keyframes transform_x_2 {
@@ -36,7 +34,6 @@
 .slide__item .side__img__3 {
   animation: transform_x_3 10s linear;
   transform: translateX(-5%);
-  will-change: transform;
 }
 
 @keyframes transform_x_3 {
@@ -52,7 +49,6 @@
 .slide__item .side__img__4 {
   animation: transform_x_4 10s linear;
   transform: translateX(-4%);
-  will-change: transform;
 }
 
 @keyframes transform_x_4 {
@@ -72,7 +68,6 @@
 .slide__item .side__img .scale__img {
   animation: scale 10s linear;
   transform: scale(1.25);
-  will-change: transform;
 }
 
 @keyframes scale {
@@ -88,7 +83,6 @@
 .slide__item .side__img__2 .scale__img {
   animation: scale-2 10s linear;
   transform: scale(1.15);
-  will-change: transform;
 }
 
 @keyframes scale-2 {
@@ -104,7 +98,6 @@
 .slide__item .side__img__3 .scale__img {
   animation: scale-3 10s linear;
   transform: scale(1.35);
-  will-change: transform;
 }
 
 @keyframes scale-3 {
@@ -120,7 +113,6 @@
 .main_img_scale {
   animation: main-scale 10s linear;
   transform: scale(1.15);
-  will-change: transform;
 }
 
 @keyframes main-scale {
